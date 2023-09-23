@@ -1,7 +1,8 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/screens/home', // Specify your entry point
+  entry: './web/index.js', // Updated entry point for the web
   output: {
     filename: 'bundle.js', // Name of the output bundle
     path: path.resolve(__dirname, 'dist'), // Output directory
@@ -12,11 +13,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/, // Match TypeScript files
-        use: 'ts-loader', // Use ts-loader for these files
+        test: /\.(js|jsx|ts|tsx)$/, // Match TypeScript and JavaScript files
+        use: 'babel-loader', // Use Babel for these files
         exclude: /node_modules/, // Exclude node_modules directory
       },
       // Add other loaders for CSS, images, etc. as needed
     ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html', // Path to your HTML template
+    }),
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'), // Serve content from the 'dist' directory
+    port: 3000, // Port for the development server
   },
 };
