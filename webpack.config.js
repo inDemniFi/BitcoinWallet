@@ -19,14 +19,6 @@ module.exports = {
       },
       // Add other loaders for CSS, images, etc. as needed
     ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html', // Path to your HTML template
-    }),
-  ],
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'), // Serve content from the 'dist' directory
-    port: 3000, // Port for the development server
-  },
+  }
+
 };
