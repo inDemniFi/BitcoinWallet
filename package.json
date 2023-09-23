@@ -1,5 +1,5 @@
 {
-  "homepage": "/src/screens/home.js",
+  "homepage": "./src/screens/home.js",
   "name": "app",
   "version": "0.0.1",
   "private": true,
