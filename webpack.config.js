@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './App.tsx', // Updated entry point for the web
+  entry: './index.js', // Updated entry point for the web
   output: {
     filename: 'bundle.js', // Name of the output bundle
     path: path.resolve(__dirname, 'dist'), // Output directory
