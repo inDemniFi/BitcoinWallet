@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "index.js", "use": "@vercel/node" },       // Build for mobile app
+      { "src": "desktop.js", "use": "@vercel/node" }     // Build for desktop app
+    ],
+    "routes": [
+      { "src": "/desktop(.*)", "dest": "/desktop.js" },  // Route for the desktop version
+      { "src": "/(.*)", "dest": "/index.js" }            // Route for the mobile version
+    ]
+  }
+  
