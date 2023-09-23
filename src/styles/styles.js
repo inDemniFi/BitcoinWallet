@@ -1,0 +1,98 @@
+import { StyleSheet } from 'react-native';
+const bitcoinColor = '#2F70B8';
+
+export const styles = StyleSheet.create({
+  container: {
+    padding: 20,
+    alignItems: 'center',
+  },
+  headerSection: {
+    marginTop: 15,
+    width: '90%',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  balanceSection: {
+    padding: 10,
+    width: '90%',
+    flexDirection: 'row',
+    borderColor: bitcoinColor,
+    borderWidth: 2,
+    justifyContent: 'center',
+    marginTop: 30,
+    borderRadius: 10,
+  },
+  responseSection: {
+    width: '90%',
+    marginTop: 30,
+    paddingHorizontal: 24,
+    paddingVertical: 10,
+    borderColor: bitcoinColor,
+    borderWidth: 2,
+    backgroundColor: '#FDEBD0',
+    borderRadius: 10,
+  },
+  methodSection: {
+    alignItems: 'center',
+    width: '90%',
+    marginTop: 30,
+    paddingHorizontal: 24,
+    paddingVertical: 10,
+    borderColor: bitcoinColor,
+    borderWidth: 2,
+    borderRadius: 10,
+  },
+  sendSection: {
+    alignItems: 'center',
+    width: '90%',
+    marginTop: 30,
+    paddingHorizontal: 24,
+    paddingVertical: 10,
+    borderColor: bitcoinColor,
+    borderWidth: 2,
+    borderRadius: 10,
+  },
+  headerText: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    alignSelf: 'center',
+    marginHorizontal: 30,
+  },
+  balanceText: {
+    alignSelf: 'center',
+    fontSize: 15,
+    fontWeight: 'bold',
+  },
+  btnText: {
+    alignSelf: 'center',
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: '#fff',
+    textAlign: 'center',
+  },
+  responseText: {
+    fontSize: 15,
+    fontWeight: 'bold',
+  },
+  input: {
+    borderColor: bitcoinColor,
+    borderWidth: 2,
+    width: '80%',
+    padding: 5,
+    margin: 5,
+    borderRadius: 5,
+  },
+  methodButton: {
+    color: bitcoinColor,
+  },
+  btn: {
+    height: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+    backgroundColor: bitcoinColor,
+    marginVertical: 5,
+    width: '80%',
+  },
+});
