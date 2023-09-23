@@ -1,5 +1,5 @@
 {
-  "name": "App",
+  "name": "app",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -16,7 +16,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.72.4",
-    "react-native-web": "~0.19.6"
+    "react-native-web": "~0.19.6",
+    "@synonymdev/result": "0.0.2",
+    "adm-zip": "^0.5.9",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -40,5 +43,9 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   }
 }
