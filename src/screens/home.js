@@ -75,7 +75,7 @@ const Home = () => {
   };
 
   return (
-
+    <SafeAreaView>
       <StatusBar />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
@@ -167,7 +167,7 @@ const Home = () => {
           </Fragment>
         </View>
       </ScrollView>
-
+    </SafeAreaView>
   );
 };
 
