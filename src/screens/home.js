@@ -29,12 +29,14 @@ const Home = () => {
   const [recipient, setRecipient] = useState('');
   const [amount, setAmount] = useState();
 
+
   const getMnemonic = async () => {
     const { data } = await BdkRn.generateMnemonic({
       length: 12,
     });
     console.log(data);
     setMnemonic(data);
+    setMnemonic(JSON.stringify(data));
     setDisplayText(JSON.stringify(data));
   };
 
