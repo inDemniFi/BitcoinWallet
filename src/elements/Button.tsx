@@ -7,7 +7,7 @@ type ButtonProps = {
   onPress: () => void;
   title: string;
   style?: object;
-}
+};
 
 const Button: React.FC<ButtonProps> = ({ onPress, title, ...props }) => {
   return (
