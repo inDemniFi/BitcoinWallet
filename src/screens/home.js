@@ -33,6 +33,7 @@ const Home = () => {
   const getMnemonic = async () => {
     const { data } = await BdkRn.generateMnemonic({
       length: 12,
+      network: 'testnet',
     });
     console.log(data);
     setMnemonic(data);
