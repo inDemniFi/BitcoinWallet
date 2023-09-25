@@ -2,7 +2,7 @@
 
   "name": "app",
 
-  "version": "0.29.0",
+  "version": "0.1.0",
 
   "private": true,
 
@@ -28,7 +28,7 @@
 
     "adm-zip": "^0.5.9",
 
-    "bdk-rn": "^0.1.1",
+    "bdk-rn": "0.29.0",
 
     "expo": "^49.0.11",
 
